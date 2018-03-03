@@ -10,6 +10,11 @@ import org.springframework.stereotype.Repository;
 public class RssDaoImpl implements RssDao{
     @Autowired
     RssMapper rssMapper;
+
+    /**
+     * 获取在更番剧总数
+     * @return
+     */
     @Override
     public int getUpdatingSize() {
         RssExample example=new RssExample();
