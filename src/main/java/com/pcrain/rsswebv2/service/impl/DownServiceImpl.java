@@ -33,4 +33,20 @@ public class DownServiceImpl implements DownService {
         Long total=pageInfo.getTotal();
         return new LayUIDataGridResult(total,list);
     }
+
+    /**
+     * 根据RssId查找记录
+     * @param rssId
+     * @param page
+     * @param rows
+     * @return
+     */
+    @Override
+    public LayUIDataGridResult getByRssId(Long rssId, Integer page, Integer rows) {
+        PageHelper.startPage(page,rows);
+        List<Down> list=downDao.getRecordByRssId(rssId);
+        PageInfo<Down> pageInfo=new PageInfo<>(list);
+        Long total=pageInfo.getTotal();
+        return new LayUIDataGridResult(total,list);
+    }
 }

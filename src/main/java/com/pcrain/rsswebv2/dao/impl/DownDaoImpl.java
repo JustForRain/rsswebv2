@@ -31,4 +31,17 @@ public class DownDaoImpl implements DownDao {
         criteria.andPubdateBetween(start,end);
         return downMapper.selectByExampleWithBLOBs(example);
     }
+
+    /**
+     * 根据RssId查找下载记录
+     * @param rssId
+     * @return
+     */
+    @Override
+    public List<Down> getRecordByRssId(Long rssId) {
+        DownExample example=new DownExample();
+        DownExample.Criteria criteria=example.createCriteria();
+        criteria.andRssidEqualTo(rssId);
+        return downMapper.selectByExampleWithBLOBs(example);
+    }
 }

@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface DownDao {
     List<Down> getRecentDown();
+
+    List<Down> getRecordByRssId(Long rssId);
 }
