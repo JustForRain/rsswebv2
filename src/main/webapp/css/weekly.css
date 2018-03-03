@@ -1,0 +1,51 @@
+
+.weekly_list{
+    padding: 5px;
+}
+.weekly_list_b{
+    height:200px;
+    width:150px;
+    display: inline-block;
+    float:left;
+    margin-right:2px;
+    cursor:pointer;
+    filter:alpha(opacity=100);
+    opacity:1;
+}
+.weekly_list_part{
+    filter:alpha(opacity=78);
+    opacity:0.78;
+    background-color:#224477;
+    width:100%;
+    display:none;
+}
+.weekly_list_title{
+    filter:alpha(opacity=66);
+    opacity:0.66;
+    background-color:#224477;
+    width:100%;
+    color:#FFF;
+    padding:2px;
+    word-spacing:2px;
+}
+.weekly_list_title a{
+    color:white;
+}
+.weekly_list_part a{
+    font-size:12px;
+    white-space:nowrap;
+    border:1px solid #224477;
+    color:#224477;
+    padding: 1px 3px 1px 3px;
+    margin:1px;
+    line-height: 20px;
+    background-color:#FFF;
+    font-weight:normal;
+    display: inline-block;
+}
+.weekly_list_part a:hover {
+    color:#f99a4d;
+}
+.wkold a{
+    color:yellow;
+}
