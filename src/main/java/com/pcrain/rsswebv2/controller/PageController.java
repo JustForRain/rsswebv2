@@ -9,4 +9,8 @@ public class PageController {
     public String IndexPage(){
         return "index";
     }
+    @RequestMapping("admin")
+    public String AdminPage(){
+        return "admin";
+    }
 }
